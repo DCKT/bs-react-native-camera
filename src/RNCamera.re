@@ -46,6 +46,7 @@ external make:
     ~flashMode: Constants.FlashMode.t=?,
     ~ref: ReasonReact.reactRef => unit=?,
     ~androidCameraPermissionOptions: permissionDialogParams=?,
+    ~captureAudio: bool=?,
     ~onBarCodeRead: {
                       .
                       "data": Js.Nullable.t(string),
