@@ -42,8 +42,8 @@ type permissionDialogParams = {
 external make:
   (
     ~style: Style.t=?,
-    ~type_: Constants.Type.t,
-    ~flashMode: Constants.FlashMode.t,
+    ~type_: Constants.Type.t=?,
+    ~flashMode: Constants.FlashMode.t=?,
     ~ref: ReasonReact.reactRef => unit=?,
     ~androidCameraPermissionOptions: permissionDialogParams=?,
     ~onBarCodeRead: {
@@ -53,6 +53,7 @@ external make:
                       "type": string,
                     } =>
                     unit
+                      =?
   ) =>
   React.element =
   "RNCamera";

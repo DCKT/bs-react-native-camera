@@ -24,11 +24,11 @@ Add it to your dependencies in `bsconfig.json` :
 ### Build
 
 ```
-npm run build
+yarn build
 ```
 
 ### Build + Watch
 
 ```
-npm run start
+yarn start
 ```
